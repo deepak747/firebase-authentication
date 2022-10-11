@@ -1,0 +1,8 @@
+<h2> Programming Books List ! </h2>
+
+<ul *ngIf="isShowing">
+    <li class="book1" *ngFor="let singleBook of books">
+        <!-- <app-book (bookEmitter)="addToCard($event)"  [book]="singleBook"></app-book> -->
+        <app-book  [book]="singleBook"></app-book>
+    </li>
+</ul>
